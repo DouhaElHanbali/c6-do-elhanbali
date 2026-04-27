@@ -4,7 +4,7 @@
 
 - Quel est le code de statut ?
 
-  Réponse : 200 OK
+  Réponse : 200
 
 - Quels headers de requête sont envoyés ?
 
@@ -17,9 +17,9 @@
 - Exercice:
   | URL | Méthode | Code | Content-Type |
   |-----|---------|------|--------------|
-  | httpbin.org/get | GET | 200 OK | text/html; charset=utf-8 |
-  | httpbin.org/post | | | |
-  | httpbin.org/status/201 | | | |
+  | httpbin.org/get | GET | 200 | text/html; charset=utf-8 |
+  | httpbin.org/post | POST | 200 | application/json |
+  | httpbin.org/status/201 | GET | 201 | text/html; charset=utf-8 |
 
 ## TP2 : Maîtrise de cURL
 
