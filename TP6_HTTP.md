@@ -17,7 +17,7 @@
 - Exercice:
   | URL | Méthode | Code | Content-Type |
   |-----|---------|------|--------------|
-  | httpbin.org/get | GET | 200 | text/html; charset=utf-8 |
+  | httpbin.org/get | GET | 200 | application/json |
   | httpbin.org/post | POST | 200 | application/json |
   | httpbin.org/status/201 | GET | 201 | text/html; charset=utf-8 |
 
