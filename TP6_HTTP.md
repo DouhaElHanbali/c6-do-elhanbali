@@ -2,18 +2,17 @@
 
 ## TP1 : Exploration avec les DevTools
 
-**Quel est le code de statut ?**
+- Quel est le code de statut ?
+  Réponse :
+  ![statut](images/statut.png)
 
-**Réponse :**
-![description](screenshots/TP1-Q1.png)
+- Quels headers de requête sont envoyés ?
+  Réponse :
+  ![headers](images/headers.png)
 
-**Quels headers de requête sont envoyés ?**
-**Réponse :**
-![description](screenshots/TP1-Q2.png)
-
-**Quel est le Content-Type de la réponse ?**
-**Réponse :**
-![description](screenshots/TP1-Q3.png)
+- Quel est le Content-Type de la réponse ?
+  Réponse :
+  ![content-type](images/content-type.png)
 
 ## TP2 : Maîtrise de cURL
 
