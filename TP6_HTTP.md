@@ -6,13 +6,13 @@
 
   Réponse : 200 OK
 
-  ![statut](images/TP1-Q1.png)
+  ![statut](images/TP1-Q1.jpg)
 
 - Quels headers de requête sont envoyés ?
 
   Réponse : Accept, User-Agent, Accept-Language...
 
-  ![headers](images/TP1-Q2.png)
+  ![headers](images/TP1-Q2.jpeg)
 
 - Quel est le Content-Type de la réponse ?
 
