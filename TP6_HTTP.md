@@ -6,19 +6,19 @@
 
   Réponse : 200 OK
 
-  ![statut](images/TP1-Q1.jpg)
+  ![statut](https://github.com/DouhaElHanbali/c6-do-elhanbali/blob/main/images/TP1-Q1.jpg)
 
 - Quels headers de requête sont envoyés ?
 
   Réponse : Accept, User-Agent, Accept-Language...
 
-  ![headers](images/TP1-Q2.jpeg)
+  ![headers](https://github.com/DouhaElHanbali/c6-do-elhanbali/blob/main/images/TP1-Q2.jpeg)
 
 - Quel est le Content-Type de la réponse ?
 
   Réponse : application/json
 
-  ![content-type](images/TP1-Q3.png)
+  ![content-type](https://github.com/DouhaElHanbali/c6-do-elhanbali/blob/main/images/TP1-Q3.png)
 
 ## TP2 : Maîtrise de cURL
 
