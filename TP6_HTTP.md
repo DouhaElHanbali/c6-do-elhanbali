@@ -4,15 +4,15 @@
 
 - Quel est le code de statut ?
   Réponse :
-  ![statut](images/statut.png)
+  ![statut](images/TP1-Q1.png)
 
 - Quels headers de requête sont envoyés ?
   Réponse :
-  ![headers](images/headers.png)
+  ![headers](images/TP1-Q2.png)
 
 - Quel est le Content-Type de la réponse ?
   Réponse :
-  ![content-type](images/content-type.png)
+  ![content-type](images/TP1-Q3.png)
 
 ## TP2 : Maîtrise de cURL
 
