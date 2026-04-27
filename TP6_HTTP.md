@@ -3,6 +3,7 @@
 ## TP1 : Exploration avec les DevTools
 
 **Quel est le code de statut ?**
+
 **Réponse :**
 ![description](screenshots/TP1-Q1.png)
 
