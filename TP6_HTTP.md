@@ -3,15 +3,21 @@
 ## TP1 : Exploration avec les DevTools
 
 - Quel est le code de statut ?
-  Réponse :
+
+  Réponse : 200 OK
+
   ![statut](images/TP1-Q1.png)
 
 - Quels headers de requête sont envoyés ?
-  Réponse :
+
+  Réponse : Accept, User-Agent, Accept-Language...
+
   ![headers](images/TP1-Q2.png)
 
 - Quel est le Content-Type de la réponse ?
-  Réponse :
+
+  Réponse : application/json
+
   ![content-type](images/TP1-Q3.png)
 
 ## TP2 : Maîtrise de cURL
