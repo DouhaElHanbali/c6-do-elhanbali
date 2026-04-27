@@ -33,9 +33,9 @@
   Réponse :
   - `-i` : affiche les headers de réponse + le corps
   - `-v` : affiche tout (connexion, headers requête >, headers réponse <, corps)
-  - Les lignes avec > = ce qu'on envoie
-  - Les lignes avec < = ce qu'on reçoit
-  - Les lignes avec \* = infos de connexion
+    - Les lignes avec > = ce qu'on envoie
+    - Les lignes avec < = ce qu'on reçoit
+    - Les lignes avec \* = infos de connexion
 
 ## TP3 : API REST avec JavaScript
 
