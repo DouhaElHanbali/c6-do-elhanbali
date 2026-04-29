@@ -31,7 +31,12 @@
 - Quelle est la différence entre -i et -v ?
 
   Réponse :
-  - `-i` : affiche les headers de réponse + le corps
+
+  ![2.1_cmd_-i](images/TP2_Q2-1_-i.png)
+  - `-i` : affiche les headers de réponse + le
+    corps
+
+  ![2.1_cmd_-i](images/TP2_Q2-1_-i.png)
   - `-v` : affiche tout (connexion, headers requête >, headers réponse <, corps)
     - Les lignes avec > = ce qu'on envoie
     - Les lignes avec < = ce qu'on reçoit
