@@ -206,7 +206,7 @@ async function fetchWithRetry(url, options, maxRetries) {
 | ----------- | -------------------------------------------------- | ---------------- | ----------------- | ------------------ |
 | github.com  | ✅(_max-age=31536000; includeSubdomains; preload_) | ✅(_deny_)       | ✅ présent        | Très bien sécurisé |
 | google.com  | ❌absent                                           | ✅(_SAMEORIGIN_) | ⚠️(_Report-Only_) | Sécurité moyenne   |
-| youtube.com | ✅(_max-age=31536000; includeSubDomains; preload_) | ✅(_SAMEORIGIN_) | ✅ présent        |                    |
+| youtube.com | ✅(_max-age=31536000; includeSubDomains; preload_) | ✅(_SAMEORIGIN_) | ✅ présent        | Très bien sécurisé |
 
 - Remarques:
   - _Report-Only_ : la règle est en mode observation. Elle ne bloque rien, mais elle enregistre tout ce qu'elle aurait bloqué et l'envoie aux développeurs.
