@@ -88,8 +88,8 @@ curl -X POST -d "name=John&email=john@example.com" \
 
 ![TP2_2-2_F1](images/TP2_2-2_F1.png)
 
-- Les données arrivent dans form, le champ json est null.
-  C'est le format des vieux formulaires HTML (<form action="...">). Les données sont encodées comme clé=valeur&clé2=valeur2.
+- Les données arrivent dans _form_, le champ _json_ est null.
+  C'est le format des vieux formulaires HTML (_<form action="...">_). Les données sont encodées comme _clé=valeur&clé2=valeur2_ .
 
 ```
 # JSON
@@ -101,7 +101,9 @@ curl -X POST \
 
 ![TP2_2-2_F2](images/TP2_2-2_F2.png)
 
-- Le Content-Type est bien _application/json_, mais json est null, car sur Windows CMD les guillemets " dans le -d ont mal passé — le JSON reçu n'était pas valide.
+- Form data : données dans "form", Content-Type: application/x-www-form-urlencoded
+- JSON : données dans "json", Content-Type: application/json
+- La différence = le format d'encodage des données envoyées
 
 ### 2.3 Headers personnalisés
 
@@ -120,8 +122,8 @@ curl -X POST \
 
 ![TP2_2-5](images/TP2_2-5.png)
 
-- o nom.ext → on peut choisir le nom du fichier
-- O → le fichier garde son nom original de l'URL
+- o nom.ext : on peut choisir le nom du fichier
+- O : le fichier garde son nom original de l'URL
 
 ### Exercice avancé
 
@@ -136,7 +138,71 @@ curl -X POST -H "Content-Type: application/json" \
 
 ## TP3 : API REST avec JavaScript
 
+## 3.1 GET basique
+
+![TP3_3-1](images/TP3_3-1.png)
+
+- _fetch(url)_ : envoie la requête GET
+- _await_ : attend la réponse avant de continuer
+- _response.json()_ : convertit la réponse en objet JS
+- _try/catch_ : si ça plante, on attrape l'erreur
+
+## 3.2 POST - Créer une ressource
+
+![TP3_3-2](images/TP3_3-2.png)
+
+- _method: 'POST'_ : on crée une nouvelle ressource
+- _headers Content-Type: application/json_ : on dit au serveur qu'on envoie du JSON
+- _body: JSON.stringify(data)_ : on convertit l'objet JS en texte JSON
+- _response.ok_ : vérifie que le status est entre 200-299
+- Le serveur répond avec l'objet créé + id: 101 généré automatiquement
+
+## 3.3 PUT - Modifier une ressource
+
+![TP3_3-3](images/TP3_3-3.png)
+
+- on modifie entièrement l'article avec _id: 1_. _PUT_ = remplace tout l'objet.
+
+## 3.4 DELETE - Supprimer une ressource
+
+![TP3_3-4](images/TP3_3-4.png)
+
+- method: _'DELETE'_ → on supprime la ressource avec id: 1
+- _response.ok_ retourne true si status\* 200-299, suppression réussie
+- Remarque _.then(console.log);_ j'ai l'ajouté jsut pour voir le résultat dans la console.
+
+## Exercice pratique
+
+```
+async function fetchWithRetry(url, options, maxRetries) {
+    for (let i = 1; i <= maxRetries; i++){
+        const response = await fetch(url, options);
+        if (response.status >= 500){
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            continue;
+        } else {
+            return response;
+        }
+    }
+    throw new Error (`Échec après ${maxRetries} tentatives`);
+}
+```
+
+![TP3_ExercicePrat](images/TP3_ExercicePrat.png)
+
 ## TP4 : Analyse des Headers de Sécurité
+
+## 4.1 Vérifier les headers d'un site
+
+![TP4_4-1](images)
+
+## 4.2 Analyser avec Security Headers
+
+![TP4_4-2](images)
+
+## Exercice
+
+![TP4_Exercice](images)
 
 ## TP5 : Cache HTTP
 
