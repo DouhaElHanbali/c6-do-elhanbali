@@ -196,9 +196,15 @@ async function fetchWithRetry(url, options, maxRetries) {
 
 ## + 4.2 Analyser avec Security Headers
 
+google.com
+
 ![TP4_4_Link1](images/TP4_4_Link1.png)
 
+github.com
 ![TP4_4_Link2](images/TP4_4_Link2.png)
+
+youtube.com
+![TP4_4_Link3](images/TP4_4_Link3.png)
 
 ## Exercice
 
@@ -210,6 +216,9 @@ async function fetchWithRetry(url, options, maxRetries) {
 
 - Remarques:
   - _Report-Only_ : la règle est en mode observation. Elle ne bloque rien, mais elle enregistre tout ce qu'elle aurait bloqué et l'envoie aux développeurs.
+  - Différence _deny_ vs _SAMEORIGIN_ pour _X-Frame_ :
+    - _deny_ : personne ne peut mettre le site dans une iframe
+    - _SAMEORIGIN_ : seulement le même site peut le faire
 
 ## TP5 : Cache HTTP
 
