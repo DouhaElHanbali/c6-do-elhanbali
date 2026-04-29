@@ -263,8 +263,6 @@ Ctrl+Shift+R (sans cache)
 
 ### Exercice
 
--
-
 ```
 <!DOCTYPE html>
 <html lang="fr">
@@ -533,4 +531,4 @@ ta session avec document.cookie (attaque XSS)
 
 Avec HttpOnly → JavaScript NE PEUT PAS lire le cookie
 → même si un script malveillant s'injecte dans la page,
-il ne peut pas voler le cookie de session ✅
+il ne peut pas voler le cookie de session
