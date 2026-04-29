@@ -167,9 +167,9 @@ curl -X POST -H "Content-Type: application/json" \
 
 ![TP3_3-4](images/TP3_3-4.png)
 
-- method: _'DELETE'_ → on supprime la ressource avec id: 1
-- _response.ok_ retourne true si status\* 200-299, suppression réussie
-- Remarque _.then(console.log);_ j'ai l'ajouté jsut pour voir le résultat dans la console.
+- method: _'DELETE'_ : on supprime la ressource avec id: 1
+- _response.ok_ retourne true si status 200-299, suppression réussie
+- Remarque (_.then(console.log);_) : j'ai l'ajouté jsut pour voir le résultat dans la console.
 
 ## Exercice pratique
 
@@ -194,15 +194,22 @@ async function fetchWithRetry(url, options, maxRetries) {
 
 ## 4.1 Vérifier les headers d'un site
 
-![TP4_4-1](images)
+## + 4.2 Analyser avec Security Headers
 
-## 4.2 Analyser avec Security Headers
+![TP4_4_Link1](images/TP4_4_Link1.png)
 
-![TP4_4-2](images)
+![TP4_4_Link2](images/TP4_4_Link2.png)
 
 ## Exercice
 
-![TP4_Exercice](images)
+| Site        | HSTS                                               | X-Frame          | CSP               | Note               |
+| ----------- | -------------------------------------------------- | ---------------- | ----------------- | ------------------ |
+| github.com  | ✅(_max-age=31536000; includeSubdomains; preload_) | ✅(_deny_)       | ✅ présent        | Très bien sécurisé |
+| google.com  | ❌absent                                           | ✅(_SAMEORIGIN_) | ⚠️(_Report-Only_) | Sécurité moyenne   |
+| youtube.com | ✅(_max-age=31536000; includeSubDomains; preload_) | ✅(_SAMEORIGIN_) | ✅ présent        |                    |
+
+- Remarques:
+  - _Report-Only_ : la règle est en mode observation. Elle ne bloque rien, mais elle enregistre tout ce qu'elle aurait bloqué et l'envoie aux développeurs.
 
 ## TP5 : Cache HTTP
 
